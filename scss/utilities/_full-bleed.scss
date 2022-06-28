@@ -1,0 +1,4 @@
+.full-bleed {
+  inline-size: calc(100vw - var(--scrollbar-width));
+  margin-inline-start: calc(50% - 50vw);
+}

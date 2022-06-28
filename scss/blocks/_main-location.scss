@@ -1,0 +1,9 @@
+.location .main {
+  --padding-block: var(--space-xxl);
+  // CHECK why full-bleed not working?
+  inline-size: calc(100vw - calc(var(--scrollbar-width) / 2));
+
+  .swicher {
+    align-items: baseline;
+  }
+}
