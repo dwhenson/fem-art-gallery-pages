@@ -1,6 +1,6 @@
 @use "../abstracts/breakpoints" as *;
 
-.header {
+.home .header {
   display: grid;
   gap: var(--space-m, 1rem);
   min-block-size: min(80vh, 50rem);
@@ -23,9 +23,14 @@
       min-inline-size: 100%;
     }
 
-    // FIXME header color change
+    p {
+      background-color: hsla(0, 0, 100, 0.2);
+    }
+
+    // FIXME header color change not working
     h1 {
       -webkit-text-stroke: 1px var(--clr-neutral-100);
+      mix-blend-mode: difference;
     }
   }
 
@@ -43,7 +48,6 @@
     }
 
     .image {
-      // CHECK is object fit doing its job?
       max-inline-size: min(100%, 35rem);
       object-fit: fill;
     }

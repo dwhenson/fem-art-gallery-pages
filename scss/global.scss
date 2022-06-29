@@ -20,18 +20,15 @@ Utilities
 
 @use "utilities/flex-column";
 @use "utilities/full-bleed";
-// @use "utilities/font-large";
-// @use "utilities/skip-link";
-// @use "utilities/uppercase";
 @use "utilities/visually-hidden";
-// @use "utilities/weight-bold";
 
 /* ==================================================
 Blocks
 ================================================== */
 
 @use "blocks/button";
-@use "blocks/header";
+@use "blocks/header-home";
+@use "blocks/header-location";
 @use "blocks/main-home";
 @use "blocks/main-location";
 @use "blocks/footer";
@@ -47,11 +44,11 @@ Exceptions
 Global Styles
 ================================================== */
 body {
+  overflow-x: hidden;
   background-color: var(--clr-neutral-100);
   font-family: var(--ff-body);
   font-size: var(--step-0);
   color: var(--clr-neutral-300);
-  overflow-y: scroll;
 }
 
 body.home {
@@ -89,7 +86,7 @@ p {
 
 :focus-visible {
   opacity: 1 !important;
-  outline: 4px solid var(--clr-primary-100);
+  outline: 4px solid currentColor;
   outline-offset: 4px;
 }
 

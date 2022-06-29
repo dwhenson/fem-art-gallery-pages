@@ -1,0 +1,16 @@
+.location .header {
+  position: relative;
+  grid-column: 1 / -1;
+
+  .button {
+    position: absolute;
+  }
+
+  .map-wrapper {
+    .map {
+      // FIXME image sizing not working
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
