@@ -3,75 +3,55 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Frontend Mentor | Art gallery website - Index</title>
+    <title>Frontend Mentor | Art gallery website - Location</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@900&family=Outfit:wght@200&display=swap"
       rel="stylesheet" />
-    <link rel="stylesheet" href="/scss/global.scss" />
+    <link rel="stylesheet" href="../scss/global.scss" />
   </head>
 
-  <body class="[ home ][ align-content flow-section ]">
-    <header class="header">
-      <div aria-hidden="true" class="[ full-bleed ][ hero-image ]">
-        <div class="black"></div>
-        <div class="image">
-          <img
-            src="images/desktop/image-hero@2x.jpg"
-            alt="Visitors looking at a picture." />
-        </div>
-        <div class="white"></div>
-      </div>
-
-      <div class="[ hero ][ has-sidebar-reverse ]">
-        <h1 >Modern<br>Art Gallery</h1>
-        <div class="flow-content">
-          <p>
-            The arts in the collection of the Modern Art Gallery all started from a spark
-            of inspiration. Will these pieces inspire you? Visit us and find out.
-          </p>
-          <a href="/pages/location.html" class="[ box ][ button ]"
-            ><span class="text">Our location</span>
-            <span class="arrow">
-              <svg width="10" height="24" xmlns="http://www.w3.org/2000/svg">
-                <path stroke="#FFF" fill="none" d="m1 0 8 12-8 12" />
-              </svg>
-            </span>
-          </a>
-        </div>
+  <body class="[ location ][ align-content ]">
+    <header class="[ header ][ align-content ]">
+      <h1 class="visually-hidden">Location Information</h1>
+      <a href="../index.html" class="[ box ][ button ]">
+        <span class="arrow">
+          <svg width="10" height="24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke="#FFF" fill="none" d="M9 24 1 12 9 0" />
+          </svg>
+        </span>
+        <span class="text">Back to home</span>
+      </a>
+      <div class="[ map-wrapper ][ full-bleed ]">
+        <img class="map" src="../images/desktop/image-map.png" alt="Location of the gallery." />
       </div>
     </header>
 
-    <main class="[ main ][ flow-content ]">
-      <div class="has-sidebar">
-        <div class="flow-content">
-          <h2>Your day at the gallery</h2>
-          <p>
-            Wander through our distinct collections and find new insights about our
-            artists. Dive into the details of their creative process.
-          </p>
-        </div>
-        <div class="img-container">
-          <img src="images/desktop/image-grid-1@2x.jpg" alt="" />
-        </div>
-      </div>
-      <div class="has-sidebar-reverse">
-        <div><img src="images/desktop/image-grid-2@2x.jpg" alt="" /></div>
-        <div class="flex-column">
-          <div><img src="images/desktop/image-grid-3@2x.jpg" alt="" /></div>
-          <div class="flow-content box">
-            <h2>Come &amp; be inspired</h2>
-            <p>
-              We’re excited to welcome you to our gallery and see how our collections
-              influence you.
-            </p>
+    <main class="[ main ][ align-content box ][ full-bleed ]">
+      <div class="switcher">
+        <h2>Our location</h2>
+        <div>
+          <div class="flow-content">
+            <address>
+              <p data-type="emphasis">99 King Street</p>
+              <p>Newport</p>
+              <p>RI 02840</p>
+              <p>United States of America</p>
+            </address>
+            <div>
+              <p>
+                Our newly opened gallery is located near the Edward King House on 99 King
+                Street, the Modern Art Gallery is free to all visitors and open seven days
+                a week from 8am to 9pm.
+              </p>
+            </div>
           </div>
         </div>
       </div>
     </main>
 
-    <footer class="[ align-content box ][ footer ]">
+    <footer class="[ align-content box ][ footer ]" data-type="primary-100">
       <div class="switcher">
         <h3>Modern <br />Art Gallery</h3>
         <p>
