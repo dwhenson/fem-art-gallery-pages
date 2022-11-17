@@ -1,15 +1,26 @@
 @use "../abstracts/breakpoints" as *;
 
 .home .header {
-  display: grid;
-  gap: var(--space-m, 1rem);
+  grid-column: 1 / -1;
   min-block-size: min(80vh, 50rem);
+
+  @include respond-to("large") {
+    background: linear-gradient(
+      90deg,
+      var(--clr-neutral-300) 50%,
+      var(--clr-neutral-100) 50%
+    );
+  }
+
+  > .container {
+    display: grid;
+    gap: var(--space-m, 1rem);
+  }
 
   .hero {
     --flow-space: var(--space-l);
     --side-size: 30rem;
 
-    z-index: 10;
     align-content: center;
     justify-self: end;
     max-inline-size: min(100%, 30rem);
@@ -25,35 +36,34 @@
 
     p {
       background-color: hsla(0%, 0%, 100%, 20%);
+      font-weight: 900;
     }
 
-    // FIXME header color change not working
     h1 {
-      -webkit-text-stroke: 1px var(--clr-neutral-100);
+      color: var(--clr-neutral-100);
       mix-blend-mode: difference;
+
+      @include respond-to("large") {
+        margin-inline-start: var(--space-l);
+      }
+    }
+
+    .button {
+      margin-block-start: var(--space-l);
     }
   }
 
   .hero-image {
-    display: flex;
+    display: grid;
     grid-area: 1 / 1 / -1 / -1;
+    place-items: start;
 
-    > * {
-      align-items: center;
+    @include respond-to("large") {
+      place-items: center;
     }
 
-    .black {
-      flex: 1 999 30%;
-      background-color: var(--clr-neutral-300);
-    }
-
-    .image {
-      max-inline-size: min(100%, 35rem);
-      object-fit: fill;
-    }
-
-    .white {
-      flex: 1 2 30%;
+    img {
+      max-inline-size: min(100%, 40rem);
     }
   }
 }
