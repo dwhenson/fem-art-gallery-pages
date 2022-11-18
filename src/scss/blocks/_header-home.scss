@@ -24,7 +24,7 @@
       min-inline-size: 100%;
     }
 
-    p span {
+    p > span {
       background-color: hsla(0%, 0%, 100%, 10%);
       font-weight: 700;
     }
@@ -52,29 +52,5 @@
     .white {
       flex: 1 2 30%;
     }
-  }
-}
-
-h1.small {
-  visibility: unset;
-
-  @include respond-to("large") {
-    visibility: hidden;
-  }
-}
-
-h1.large {
-  position: absolute;
-  visibility: hidden;
-  inset-block-start: 50%;
-  transform: translateY(-100%);
-  font-family: var(--ff-headings);
-  font-size: var(--step-6);
-  text-transform: uppercase;
-  color: var(--clr-neutral-100);
-  mix-blend-mode: difference;
-
-  @include respond-to("large") {
-    visibility: unset;
   }
 }

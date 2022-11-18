@@ -29,6 +29,7 @@ Blocks
 @use "blocks/button";
 @use "blocks/header-home";
 @use "blocks/header-location";
+@use "blocks/heading";
 @use "blocks/main-home";
 @use "blocks/main-location";
 @use "blocks/footer";
@@ -36,9 +37,6 @@ Blocks
 /* ==================================================
 Exceptions
 ================================================== */
-
-@use "exceptions/emphasis";
-@use "exceptions/p100";
 
 /* ==================================================
 Global Styles
