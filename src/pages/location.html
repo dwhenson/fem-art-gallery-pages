@@ -3,6 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="An example project demonstrating intrinsic design, Javacript API usage, performance optimisations and basic testing" />
     <title>Frontend Mentor | Art gallery website - Location</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,10 +20,11 @@
       integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI="
       crossorigin="" />
     <script
+      async
       src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
       integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM="
       crossorigin=""></script>
-      <script type="module" src="../js/leaflet-map.js"></script>
+    <script async type="module" src="../js/leaflet-map.js"></script>
   </head>
 
   <body class="[ location ][ align-content ]">
@@ -34,12 +38,7 @@
         </span>
         <span class="text">Back to home</span>
       </a>
-      <div id="map" class="[ map-wrapper ][ full-bleed ]">
-    <!--     <img
-          class="map"
-          src="../images/desktop/image-map.png"
-          alt="Location of the gallery." />
-      </div> -->
+      <div id="map" class="[ map-wrapper ][ full-bleed ]"></div>
     </header>
 
     <main class="[ main ][ align-content box ][ full-bleed ]">
@@ -101,5 +100,4 @@
       </div>
     </footer>
   </body>
-
 </html>

@@ -4,14 +4,14 @@
 
   .button {
     position: absolute;
+    z-index: 1000;
   }
 
   .map-wrapper {
-    z-index: -10;
-    // .map {
-    // inline-size: 100%;
     block-size: 75vh;
-    // background-color: hotpink;
-    // }
+    // CHECK background srcset
+    background-image: url("../images/desktop/image-map.png");
+    background-position: center center;
+    background-size: cover;
   }
 }

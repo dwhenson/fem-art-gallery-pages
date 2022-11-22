@@ -2,6 +2,7 @@
   --padding-block: 0;
   --padding-inline: 0;
 
+  position: relative;
   display: inline-flex;
   max-inline-size: fit-content;
   font-family: var(--ff-headings);
