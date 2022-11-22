@@ -13,7 +13,14 @@
   .text {
     padding-block: var(--space-xs);
     padding-inline: var(--space-s);
-    transition: background 300ms ease-in-out;
+    background: linear-gradient(
+        to left,
+        var(--clr-neutral-300) 50%,
+        var(--clr-primary-100) 50%
+      )
+      right;
+    background-size: 200% 100%;
+    transition: 300ms linear 100ms;
   }
 
   .arrow {
@@ -21,17 +28,33 @@
     place-items: center;
     padding-block: var(--space-xs);
     padding-inline: var(--space-s);
-    background-color: var(--clr-primary-100);
-    transition: background 300ms ease-in-out;
+    background: linear-gradient(
+        to left,
+        var(--clr-primary-100) 50%,
+        var(--clr-neutral-300) 50%
+      )
+      right;
+    background-size: 200% 100%;
+    transition: 100ms linear;
   }
 
   &:hover .text,
   &:focus .text {
-    background-color: var(--clr-primary-100);
+    // background-color: var(--clr-primary-100);
+    background-position: left;
+    transition: 300ms linear;
   }
 
   &:hover .arrow,
   &:focus .arrow {
-    background-color: var(--clr-neutral-300);
+    background-position: left;
+    transition: 100ms linear 300ms;
+    // transition: 400ms linear 200ms;
+    // background-color: var(--clr-neutral-300);
   }
 }
+
+// background: linear-gradient(to left, red 50%, blue 50%) right;
+// background-size: 200% 100%;
+//
+// transition:all 2s linear;
