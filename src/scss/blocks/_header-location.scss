@@ -9,8 +9,16 @@
 
   .map-wrapper {
     block-size: 75vh;
-    // CHECK background srcset
+    background: var(--clr-neutral-300);
     background-image: url("../images/desktop/image-map.png");
+    background-image: image-set(
+      url("../images/mobile/image-map@2x.png") 1x,
+      url("../images/desktop/image-map@2x.png") 2x
+    );
+    background-image: image-set(
+      url("../images/mobile/image-map@2x.png") 1100w,
+      url("../images/desktop/image-map@2x.png") 800w
+    );
     background-position: center center;
     background-size: cover;
   }
