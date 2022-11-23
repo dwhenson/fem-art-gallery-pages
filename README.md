@@ -1,31 +1,52 @@
-# Frontend Mentor - Suite landing page
+# Art gallery Website
 
-![Design preview for the Art Gallery coding challenge](images/preview.jpg)
+This is a solution to the [Art gallery website challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/art-gallery-website-yVdrZlxyA). Frontend Mentor challenges are designed to help developers improve their coding skills by building realistic projects. Assets are provided, but no guidance, and developers are free to choose any approach to solving the challenge.
 
-Continuing to explore intrinsic design. I think this is a big improvement on my last attempt. Again I've pushed myself to avoid the use of media queries in favour of a more fluid approach. As with most things, there's a balance to be found here I think. I like the intrinsic design approach, and then using media queries to tweak details.
+This is a simple two page, design that lends itself to intrinsic approach. I think this is a big improvement on my last attempt at this approach. I've avoided the use of media queries in favour of a more fluid approach. As with most things, there's a balance to be found here I think. I like the intrinsic design approach, and then using media queries to tweak details.
 
-## Users should be able to:
+![Design preview for the Art Gallery coding challenge](./images/preview.jpg)
+
+## Overview
+
+### The challenge
+
+Users should be able to:
 
 - View the optimal layout depending on their device's screen size
 - See hover states for interactive elements
+- Use Leaflet JS to create an interactive location map with custom location pin
 
-## Lessons learnt
+## The solution
 
-- 💡 Focusing on intrinsic design forced me to improve my knowledge of modern CSS functions (`min`, `max`, `clamp`, and `flex` and `grid` etc.)
-- 💡 CUBE CSS seems to play really nicely with this approach, I think as container queries come online this approach will become more practical
+- [Live Site URL](https://fem-art-gallery-pages.vercel.app/)
 
-## Problems
+### Built with
 
-I think the layout is mostly working OK but have two issues that have flummoxed me that I would welcome advice on:
+- HTML and SCSS
+- [LeafletJS](https://leafletjs.com/) - for the map on the second page
+- [Parcel](https://parceljs.org/) - for the build tool
 
-- The `h1` should be white on the black background, and black otherwise. I have tried following some online tutorials using `mix-blend-mode` for this but cannot make it work.
-- For some reason, `object-fit` and `object-postioning` don't seem to have any impact on the map image. This is only really obvious on large screens, but again, I am a bit unsure of what I am doing wrong here.
+### What I learned
 
-## Resources
+- Focusing on intrinsic design forced me to improve my knowledge of modern CSS functions (`min`, `max`, `clamp`, and `flex` and `grid` etc.).
+- CUBE CSS seems to play really nicely with this approach, I think as container queries come online this approach will become more practical.
+- The font colour change on the `h1` was a challenge. I used `mixed-blend-mode`, which required some code restructuring that I'm not 100% happy with.
+- I'm quite pleased with the transitions on the buttons. I'm not sure transitioning `background` is performant, but hopefully a little bit is OK!
 
-- 🔗 A lot of the approach I've tried to apply here comes from the work Stephanie Eckles has been doing on [intrinsic design](https://moderncss.dev/contextual-spacing-for-intrinsic-web-design/).
-- 🔗 I revisited [Every Layout](https://every-layout.dev) and used many of the approaches on the site for this challenge. They can sometimes appear quite complicated, but I really like the approach advocated. Highly recommended.
+### Where I got stuck
 
-## Future learning
+- The zoom on the LeafletJS isn't great as the marker looses its central positioning. I have tried a few approaches but haven't been able to fix it yet.
 
-- 🙇‍♂️ I want to keep pushing on my learning an intrinsic design approach, but I'll allow myself more use of media queries so that the final product is more finished.
+### Resources
+
+- A lot of the approach I've tried to apply here comes from the work Stephanie Eckles has been doing on [intrinsic design](https://moderncss.dev/contextual-spacing-for-intrinsic-web-design/).
+- I revisited [Every Layout](https://every-layout.dev) and used many of the approaches on the site for this challenge. They can sometimes appear quite complicated, but I really like the approach advocated. Highly recommended.
+
+### Continued development
+
+- I want to keep pushing on my learning an intrinsic design approach, but I'll allow myself more use of media queries so that the final product is more finished. (As I have had to do with the `h1`)
+
+## Author
+
+- [Personal Website](https://www.dwhenson.com)
+- Frontend Mentor Profile - [@dwhenson](https://www.frontendmentor.io/profile/dwhenson)

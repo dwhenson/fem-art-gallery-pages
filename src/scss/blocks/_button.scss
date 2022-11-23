@@ -20,7 +20,7 @@
       )
       right;
     background-size: 200% 100%;
-    transition: 300ms linear 100ms;
+    transition: background 300ms linear 100ms;
   }
 
   .arrow {
@@ -35,26 +35,18 @@
       )
       right;
     background-size: 200% 100%;
-    transition: 100ms linear;
+    transition: background 100ms linear;
   }
 
   &:hover .text,
   &:focus .text {
-    // background-color: var(--clr-primary-100);
     background-position: left;
-    transition: 300ms linear;
+    transition: background 300ms linear;
   }
 
   &:hover .arrow,
   &:focus .arrow {
     background-position: left;
-    transition: 100ms linear 300ms;
-    // transition: 400ms linear 200ms;
-    // background-color: var(--clr-neutral-300);
+    transition: background 100ms linear 300ms;
   }
 }
-
-// background: linear-gradient(to left, red 50%, blue 50%) right;
-// background-size: 200% 100%;
-//
-// transition:all 2s linear;
