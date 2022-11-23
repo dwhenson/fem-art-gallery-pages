@@ -29,18 +29,30 @@
   <body class="[ home ][ align-content flow-section ]">
     <header class="header">
       <h1 class="large">Modern<br />Art Gallery</h1>
-      <div aria-hidden="true" class="[ full-bleed ][ hero-image ]">
+      <div class="[ full-bleed ][ hero-image ]">
         <div class="black"></div>
         <div class="image">
           <picture>
             <source
               srcset="images/desktop/image-hero@2x.jpg"
-              media="(min-width: 1100px)" />
-            <source srcset="images/tablet/image-hero@2x.jpg" media="(min-width: 800px)" />
+              media="(min-width: 1100px)"
+              width="1080"
+              height="1600" />
+            <source
+              srcset="images/tablet/image-hero@2x.jpg"
+              media="(min-width: 800px)"
+              width="874"
+              height="1400" />
+            <source
+              src="images/mobile/image-hero@2x.jpg"
+              alt="Visitors enjoying the museum."
+              width="750"
+              height="480" />
             <img
-              srcset="images/mobile/image-hero@2x.jpg"
-              src="images/mobile/image-hero.jpg"
-              alt="Visitors enjoying the museum." />
+              src="images/mobile/image-hero@2x.jpg"
+              alt="Visitors enjoying the museum."
+              width="750"
+              height="480" />
           </picture>
         </div>
         <div class="white"></div>
@@ -78,13 +90,68 @@
           </p>
         </div>
         <div class="img-container">
-          <img src="images/desktop/image-grid-1@2x.jpg" alt="" />
+          <picture>
+            <source
+              srcset="images/desktop/image-grid-1@2x.jpg"
+              media="(min-width: 900px)"
+              width="1270"
+              height="800" />
+            <source
+              srcset="images/tablet/image-grid-1@2x.jpg"
+              media="(min-width: 600px)"
+              width="786"
+              height="800" />
+            <img
+              src="images/mobile/image-grid-1@2x.jpg"
+              alt="An empty gallery at the museum."
+              width="686"
+              height="640"
+              loading="lazy" />
+          </picture>
         </div>
       </div>
       <div class="has-sidebar-reverse">
-        <div><img src="images/desktop/image-grid-2@2x.jpg" alt="" /></div>
+        <div>
+          <picture>
+            <source
+              srcset="images/desktop/image-grid-2@2x.jpg"
+              media="(min-width: 900px)"
+              width="1270"
+              height="1440" />
+            <source
+              srcset="images/tablet/image-grid-2@2x.jpg"
+              media="(min-width: 600px)"
+              width="786"
+              height="1440" />
+            <img
+              src="images/mobile/image-grid-2@2x.jpg"
+              alt="An empty seat and picture in the museum."
+              width="686"
+              height="960"
+              loading="lazy" />
+          </picture>
+        </div>
         <div class="flex-column">
-          <div><img src="images/desktop/image-grid-3@2x.jpg" alt="" /></div>
+          <div>
+            <picture>
+              <source
+                srcset="images/desktop/image-grid-3@2x.jpg"
+                media="(min-width: 900px)"
+                width="1270"
+                height="1440" />
+              <source
+                srcset="images/tablet/image-grid-3@2x.jpg"
+                media="(min-width: 600px)"
+                width="786"
+                height="1440" />
+              <img
+                src="images/mobile/image-grid-3@2x.jpg"
+                alt="Visitors enjoying the museum."
+                width="686"
+                height="960"
+                loading="lazy" />
+            </picture>
+          </div>
           <div class="flow-content box">
             <h2>Come &amp; be inspired</h2>
             <p>
