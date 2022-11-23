@@ -44,7 +44,8 @@ Users should be able to:
 
 ### Continued development
 
-- I want to keep pushing on my learning an intrinsic design approach, but I'll allow myself more use of media queries so that the final product is more finished. (As I have had to do with the `h1`)
+- I want to keep pushing on my learning an intrinsic design approach, but I'll allow myself more use of media queries so that the final product is more finished (as I have had to do with the `h1`).
+- I'm still struggling to get my head around the `srcset` attribute and `picture` element. I continually have to refer back to [this CSS Tricks article](https://css-tricks.com/a-guide-to-the-responsive-images-syntax-in-html/) on how to implement them.
 
 ## Author
 
