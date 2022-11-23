@@ -32,6 +32,7 @@ Users should be able to:
 - CUBE CSS seems to play really nicely with this approach, I think as container queries come online this approach will become more practical.
 - The font colour change on the `h1` was a challenge. I used `mixed-blend-mode`, which required some code restructuring that I'm not 100% happy with.
 - I'm quite pleased with the transitions on the buttons. I'm not sure transitioning `background` is performant, but hopefully a little bit is OK!
+- The first time for me using `image-set` to optimise the fallback in the API fails. I progressively enhanced the rule to give the best solution to each user
 
 ### Where I got stuck
 
