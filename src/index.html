@@ -7,21 +7,22 @@
       name="description"
       content="An example project demonstrating intrinsic design, Javacript API usage, performance optimisations and basic testing" />
     <title>Frontend Mentor | Art gallery website - Index</title>
-      <style>
-        @font-face {
-          font-family: "Big Shoulders Display";
-          src: local("Big Shoulders Display"), url("fonts/BigShouldersDisplay-VariableFont_wght.ttf") format("truetype");
-          font-weight: 900;
-          font-display: swap;
-        }
+    <style>
+      @font-face {
+        font-family: "Big Shoulders Display";
+        src: local("Big Shoulders Display"),
+          url("fonts/BigShouldersDisplay-VariableFont_wght.ttf") format("truetype");
+        font-weight: 900;
+        font-display: swap;
+      }
 
-        @font-face {
-          font-family: "Outfit";
-          src: local("Outfit"), url("fonts/Outfit-VariableFont_wght.ttf") format("woff2");
-          font-weight: 200;
-          font-display: swap;
-        }
-      </style>
+      @font-face {
+        font-family: "Outfit";
+        src: local("Outfit"), url("fonts/Outfit-VariableFont_wght.ttf") format("woff2");
+        font-weight: 200;
+        font-display: swap;
+      }
+    </style>
     <link rel="stylesheet" href="scss/global.scss" />
   </head>
 
@@ -31,9 +32,16 @@
       <div aria-hidden="true" class="[ full-bleed ][ hero-image ]">
         <div class="black"></div>
         <div class="image">
-          <img
-            src="images/desktop/image-hero@2x.jpg"
-            alt="Visitors looking at a picture." />
+          <picture>
+            <source
+              srcset="images/desktop/image-hero@2x.jpg"
+              media="(min-width: 1100px)" />
+            <source srcset="images/tablet/image-hero@2x.jpg" media="(min-width: 800px)" />
+            <img
+              srcset="images/mobile/image-hero@2x.jpg"
+              src="images/mobile/image-hero.jpg"
+              alt="Visitors enjoying the museum." />
+          </picture>
         </div>
         <div class="white"></div>
       </div>
@@ -41,9 +49,12 @@
       <div class="[ hero ][ has-sidebar-reverse ]">
         <h1 class="small">Modern<br />Art Gallery</h1>
         <div class="flow-content">
-          <p><span>
-            The arts in the collection of the Modern Art Gallery all started from a spark
-            of inspiration. Will these pieces inspire you? Visit us and find out.</span>
+          <p>
+            <span>
+              The arts in the collection of the Modern Art Gallery all started from a
+              spark of inspiration. Will these pieces inspire you? Visit us and find
+              out.</span
+            >
           </p>
           <a href="pages/location.html" class="[ box ][ button ]"
             ><span class="text">Our location</span>
