@@ -4,7 +4,7 @@ This is a solution to the [Art gallery website challenge on Frontend Mentor](htt
 
 This is a simple two page, design that lends itself to intrinsic approach. I think this is a big improvement on my last attempt at this approach. I've avoided the use of media queries in favour of a more fluid approach. As with most things, there's a balance to be found here I think. I like the intrinsic design approach, and then using media queries to tweak details.
 
-![Design preview for the Art Gallery coding challenge](./images/preview.jpg)
+![Design preview for the Art Gallery coding challenge](./src/images/preview.jpg)
 
 ## Overview
 
