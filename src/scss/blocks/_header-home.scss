@@ -47,6 +47,14 @@
       max-inline-size: min(100vw, 35rem);
       background-color: var(--clr-neutral-100);
       object-fit: fill;
+
+      img {
+        max-inline-size: 100vw;
+
+        @include respond-to("medium") {
+          max-inline-size: 100%;
+        }
+      }
     }
 
     .white {
